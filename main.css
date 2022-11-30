@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 16px;
+    background-color: #0486a7;
+    color: #ecf0f1;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header .container {
+    font-weight: bold;
+}
+
+header .container, .container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container, .container1 {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    display: flex;
+    margin: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    display: flex;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+section .container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+section .container1 img {
+    max-width: 500px;
+    margin-right: 2em;
+}
+
+section div h2 {
+    font-style: italic;
+    padding: 16px 0;
+    color: #0486a7;
+    border-bottom: 2px solid #0486a7;
+}
+
+section div > p {
+    padding: 34px 0;
+}
+
+section div .lista-brinquedos {
+    display: flex;
+    margin-top: 4em;
+}
+
+.lista-brinquedos {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    max-width: 1250px;
+    column-gap: 1%;
+    list-style: none;
+}
+
+button {
+    width: 100%;
+    padding: 7px;
+    background-color: #3285f1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 16px 0;
+    border: 1px solid black;
+}
+
+h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+    .container, .container1 {
+        max-width: 90%;
+    }
+
+    .container1 {
+        flex-direction: column;
+    }
+
+    section .container1 img{
+        margin: 0 0;
+    }
+
+    section div .lista-brinquedos {
+        display: block;
+        margin-top: 4em;
+    }
+
+    button {
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container, .container1 {
+        max-width: 90%;
+    }
+
+    section div .lista-brinquedos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        margin-top: 4em;
+    }
+
+    section .container1 img{
+        max-width: 400px;
+    }
+
+    button {
+        max-width: 75%;
+    }
+}
