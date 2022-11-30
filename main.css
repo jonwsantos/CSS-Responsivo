@@ -25,7 +25,7 @@ header .container, .container1 {
 }
 
 .container, .container1 {
-    max-width: 1250px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
@@ -76,14 +76,13 @@ section div .lista-brinquedos {
 
 .lista-brinquedos {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
-    max-width: 1250px;
+    max-width: 1024px;
     column-gap: 1%;
     list-style: none;
 }
 
 button {
-    width: 100%;
+    width: 90%;
     padding: 7px;
     background-color: #3285f1;
     color: #fff;
@@ -102,7 +101,7 @@ h3 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 250px;
 }
 
 @media screen and (max-width: 640px) {
@@ -144,6 +143,6 @@ img {
     }
 
     button {
-        max-width: 75%;
+        max-width: 80%;
     }
 }
